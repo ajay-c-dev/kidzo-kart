@@ -748,13 +748,6 @@ h2 span {
 /* New Sections Styling (Global) */
 
 /* Hero Updates */
-.kannada-text {
-    font-family: 'Fredoka', sans-serif;
-    color: var(--secondary);
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
 
 .floating-icon {
     position: absolute;
