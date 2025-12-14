@@ -951,10 +951,10 @@ h2 span {
         height: 100vh;
         background: white;
         flex-direction: column;
-        justify-content: center;
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
         transition: var(--transition);
         padding: 40px;
+        padding-top: 120px;
         z-index: 999;
     }
 
@@ -1016,11 +1016,6 @@ h2 span {
     }
 
     /* Brand & Location */
-    .brand-logo img {
-        width: 120px;
-        height: 120px;
-    }
-
     .location-banner h2 {
         font-size: 1.8rem;
     }
