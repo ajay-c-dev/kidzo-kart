@@ -18,14 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Header Scroll Effect
+    // Header Scroll Effect & Scrollspy
     const header = document.querySelector('.header');
+
+    // Sections for Scrollspy
+    const spySections = document.querySelectorAll('section');
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
+
+        let current = '';
+        spySections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
     });
 
     // --- GSAP Animations ---

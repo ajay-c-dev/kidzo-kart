@@ -228,6 +228,15 @@ h2 span {
     transform: translateY(0);
 }
 
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link.active::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Hero */
 .hero {
     padding-top: 140px;
@@ -961,6 +970,25 @@ h2 span {
         padding: 15px 0;
     }
 
+    .nav-link::after {
+        top: 13px;
+        right: -10px;
+        font-size: 1.8rem;
+    }
+
+    .icon-1 {
+        left: -1px;
+    }
+
+    .icon-2 {
+        top: -40%;
+        bottom: 0%;
+    }
+
+    .icon-3 {
+        right: 3%;
+    }
+
     /* Stacked Layouts */
     .hero-container,
     .about-container,
@@ -982,7 +1010,6 @@ h2 span {
 
     .hero-image img {
         max-width: 80%;
-        margin: 0 auto;
     }
 
     .features-grid,
